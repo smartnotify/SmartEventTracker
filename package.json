@@ -1,0 +1,27 @@
+{
+  "name": "SmartEventTracker",
+  "version": "0.0.0",
+  "description": "Smart Event Manager\r Copyright � 2012-2015, PyraSolutions LLC. All rights reserved.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-typescript": "^2.9.1",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartnotify/SmartEventTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartnotify/SmartEventTracker/issues"
+  },
+  "homepage": "https://github.com/smartnotify/SmartEventTracker#readme"
+}
