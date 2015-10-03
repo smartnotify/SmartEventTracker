@@ -5,14 +5,46 @@ enum Alert {
     Critical = 3
 }
 
-class PyraTracker {
-    message: Alert;
+interface FailureInterface {
+    content: string;
+    title: string;
+}
 
-    constructor(message: Alert) {
-        this.message = message;
+class Failure implements FailureInterface {
+    title: string;
+    content: string;
+
+    constructor(title: string, content: string) {
+        this.title = title;
+        this.content = content;
+    }
+}
+
+class FakeFailure implements FailureInterface {
+    title: string;
+    content: string;
+
+    constructor(title: string, content: string) {
+        this.title = title;
+        this.content = content;
     }
 
-    getAlert() {
-        return this.message;
+    getContent() {
+        return this.title + ' & ' + this.content;
+    }
+}
+
+class SmartTracker {
+    severity: Alert;
+    failure: FailureInterface;
+
+    constructor(failure: FailureInterface, severity: Alert) {
+        this.failure = failure;
+        this.severity = severity;
+    }
+
+    getTrackedEvent() {
+            return this.failure.getContent() +
+            ', severity: ' + this.severity;
     }
 }
