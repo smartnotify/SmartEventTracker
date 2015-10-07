@@ -44,7 +44,6 @@ class SmartTracker {
     }
 
     getTrackedEvent() {
-            return this.failure.getContent() +
-            ', severity: ' + this.severity;
+            return true;
     }
 }

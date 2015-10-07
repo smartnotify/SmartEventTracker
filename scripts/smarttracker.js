@@ -28,8 +28,7 @@ var SmartTracker = (function () {
         this.severity = severity;
     }
     SmartTracker.prototype.getTrackedEvent = function () {
-        return this.failure.getContent() +
-            ', severity: ' + this.severity;
+        return true;
     };
     return SmartTracker;
 })();
